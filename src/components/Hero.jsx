@@ -66,7 +66,7 @@ const Hero = () => {
             className="flex space-x-6"
           >
             <a
-              href="https://github.com/niroshanmadu"
+              href="https://github.com/NiroshanMadusanka"
               target="_blank"
               rel="noopener noreferrer"
               className="text-theme-gray hover:text-theme-secondary transition-colors duration-200"
@@ -74,7 +74,7 @@ const Hero = () => {
               <FaGithub size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/niroshanmadu"
+              href="https://www.linkedin.com/in/d-m-n-madusanka-disanayaka-54736128b"
               target="_blank"
               rel="noopener noreferrer"
               className="text-theme-gray hover:text-theme-secondary transition-colors duration-200"

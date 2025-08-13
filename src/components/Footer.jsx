@@ -17,7 +17,7 @@ const Footer = () => {
         >
           <div className="flex justify-center space-x-6 mb-6">
             <a
-              href="https://github.com/niroshanmadu"
+              href="https://github.com/NiroshanMadusanka"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -25,7 +25,7 @@ const Footer = () => {
               <FaGithub size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/niroshanmadu"
+              href="https://www.linkedin.com/in/d-m-n-madusanka-disanayaka-54736128b"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-200"
