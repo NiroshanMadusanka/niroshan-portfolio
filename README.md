@@ -24,7 +24,7 @@ A modern, responsive portfolio website built with React and Tailwind CSS showcas
 - Node.js (v16 or higher)
 - npm
 
-## 🚀 Getting Started
+<!-- ## 🚀 Getting Started
 
 ### Installation
 
@@ -44,16 +44,17 @@ npm install
 3. Start the development server:
 
 ```bash
-npm run dev
-```
+npm run dev -->
+
+````
 
 4. Open your browser and navigate to `http://localhost:5173`
 
-### Building for Production
+<!-- ### Building for Production
 
 ```bash
 npm run build
-```
+``` -->
 
 The built files will be in the `dist` directory.
 
@@ -67,7 +68,7 @@ The built files will be in the `dist` directory.
 6. **Contact** - Contact information and social links
 7. **Footer** - Quick navigation and social media links
 
-## 🎨 Customization
+<!-- ## 🎨 Customization
 
 ### Personal Information
 
@@ -129,35 +130,37 @@ The portfolio is fully responsive and optimized for:
 
 ### Project Structure
 
-```
+````
+
 niroshan-portfolio/
 ├── public/
 ├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Projects.jsx
-│   │   ├── Education.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── Hero.jsx
+│ │ ├── About.jsx
+│ │ ├── Skills.jsx
+│ │ ├── Projects.jsx
+│ │ ├── Education.jsx
+│ │ ├── Contact.jsx
+│ │ └── Footer.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
 └── README.md
+
 ```
 
 ## 🚀 Deployment
 
-### Deploy to Vercel
+<!-- ### Deploy to Vercel
 
 1. Push your code to GitHub
 2. Import your repository on [Vercel](https://vercel.com)
-3. Deploy with default settings
+3. Deploy with default settings -->
 
 ### Deploy to Netlify
 
@@ -178,6 +181,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **LinkedIn**: [linkedin.com/in/niroshanmadu](https://linkedin.com/in/niroshanmadu)
 - **GitHub**: [github.com/niroshanmadu](https://github.com/niroshanmadu)
 
----
+--- -->
 
 Built with ❤️ by D M N M Dissanayaka
+```
