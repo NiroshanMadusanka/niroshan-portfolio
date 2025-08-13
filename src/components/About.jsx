@@ -13,8 +13,8 @@ const About = () => {
             </h2>
           </ScrollReveal>
 
-          <div className="bg-theme/80 backdrop-blur-sm rounded-xl p-8 shadow-theme">
-            <div className="space-y-6 text-theme-primary">
+          <div className="glassmorphism-content">
+            <ScrollRevealGroup>
               <ScrollReveal direction="up" delay={0.2} duration={0.8}>
                 <div>
                   <h3 className="text-xl font-semibold text-theme-secondary mb-3">
@@ -35,10 +35,10 @@ const About = () => {
                     Skills Summary
                   </h3>
                   <p className="text-theme-gray">
-                    As a full-stack developer, I combine strong programming
-                    skills with a deep understanding of mathematical modeling
-                    and cybersecurity principles to build robust, user-friendly
-                    applications.
+                    I combine expertise in software development, computational
+                    mathematics, and cybersecurity to design intelligent,
+                    secure, and high-performance solutions for the modern
+                    digital world
                   </p>
                 </div>
               </ScrollReveal>
@@ -49,13 +49,13 @@ const About = () => {
                     Personal Motivation
                   </h3>
                   <p className="text-theme-gray">
-                    I strive to continuously learn, improve, and apply my
-                    diverse knowledge to real-world challenges, bridging the
-                    domains of software and mathematics.
+                    Fueled by curiosity, I push boundaries, embrace new
+                    technologies, and merge software with mathematics to create
+                    solutions that make a real impact
                   </p>
                 </div>
               </ScrollReveal>
-            </div>
+            </ScrollRevealGroup>
           </div>
         </div>
       </div>

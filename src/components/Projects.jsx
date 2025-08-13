@@ -5,44 +5,30 @@ import TiltWrapper from "./TiltWrapper";
 
 const Projects = () => {
   const projects = [
-    // {
-    //   title: "FixItGo",
-    //   description:
-    //     "An on-demand mechanic connection app with real-time GPS tracking, built using React Native, Node.js, and MongoDB.",
-    //   techStack: [
-    //     "React Native",
-    //     "Node.js",
-    //     "MongoDB",
-    //     "GPS Integration",
-    //     "Real-time Updates",
-    //   ],
-    //   githubUrl: "https://github.com/niroshanmadu/fixitgo",
-    //   liveUrl: "https://fixitgo-demo.vercel.app",
-    //   imageUrl: "/api/placeholder/400/300",
-    // },
     {
       title: "RENT & RIDE",
       description:
         "Vehicle renting website with PHP backend and role-based user management. Features include booking system, payment integration, and admin dashboard.",
       techStack: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Bootstrap"],
-      githubUrl: "https://github.com/niroshanmadu/rent-ride",
-      liveUrl: "https://rent-ride-demo.vercel.app",
-      imageUrl: "/api/placeholder/400/300",
+      githubUrl:
+        "https://github.com/NiroshanMadusanka/CSC3132_Project_Vehicle_Renting_Website",
+      liveUrl: "#",
+      imageUrl: "/src/assets/rent-ride.jpeg",
     },
     {
-      title: "DoughGo",
+      title: "DoughGo (Group Project)",
       description:
-        "Bakery delivery management platform using React.js, React Native, Node.js, and MongoDB. Includes order tracking, payment processing, and inventory management.",
+        "DoughGo is a full-stack bakery delivery management system developed for coordinating bakery item deliveries between bakery owners, drivers, and customers. It includes a React.js web application for bakery owners, a React Native mobile application for drivers and customers, and a Node.js + Express.js + MongoDB backend.",
       techStack: [
         "React.js",
         "React Native",
         "Node.js",
         "MongoDB",
-        "Stripe API",
+        "TailwindCSS",
       ],
-      githubUrl: "https://github.com/niroshanmadu/doughgo",
-      liveUrl: "https://doughgo-demo.vercel.app",
-      imageUrl: "/api/placeholder/400/300",
+      githubUrl: "https://github.com/kavindacena99/DoughGo",
+      liveUrl: "#",
+      imageUrl: "/src/assets/doughgo.jpg",
     },
   ];
 
@@ -75,7 +61,7 @@ const Projects = () => {
               viewport={{ once: true }}
             >
               <TiltWrapper
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                className="glassmorphism-card p-6"
                 tiltMaxAngleX={8}
                 tiltMaxAngleY={8}
                 scale={1.03}
@@ -83,8 +69,12 @@ const Projects = () => {
                 glareMaxOpacity={0.2}
                 glareColor="#ffffff"
               >
-                <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">Project Image</span>
+                <div className="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={project.imageUrl}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <div className="p-6">

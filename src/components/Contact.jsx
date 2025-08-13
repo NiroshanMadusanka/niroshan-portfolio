@@ -30,8 +30,9 @@ const Contact = () => {
                   Get in Touch
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  I'm always open to discussing new opportunities, creative
-                  ideas, or how I can help you achieve your goals.
+                  Have an idea or opportunity in mind? Let’s talk! I’m always
+                  open to collaborating, sharing ideas, and creating solutions
+                  that make an impact.
                 </p>
 
                 <div className="space-y-4">
