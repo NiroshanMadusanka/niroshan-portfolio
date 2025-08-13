@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+  --text-gray: #6b7280;
+  --text-gray-light: #9ca3af;
+  --border-color: #e5e7eb;
+  --bg-primary-50: #e0e7ff;
+  --bg-primary-100: #c7d2fe;
+  --bg-secondary-50: #f9fafb;
+  --bg-secondary-100: #f3f4f6;
+  --bg-gradient-from: #e0e7ff;
+  --bg-gradient-to: #f3f4f6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+  --text-gray: #9ca3af;
+  --text-gray-light: #d1d5db;
+  --border-color: #374151;
+  --bg-primary-50: #23215e;
+  --bg-primary-100: #312e81;
+  --bg-secondary-50: #111827;
+  --bg-secondary-100: #1f2937;
+  --bg-gradient-from: #23215e;
+  --bg-gradient-to: #111827;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background);
+    /* background-image: url("./assets/background.gif");
+    background-image: url("./assets/background.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  #root {
+    min-height: 100vh;
+    background-color: transparent;
+  }
+
+  /* Make content backgrounds transparent to show the main background */
+  section,
+  .section-padding,
+  .container-custom {
+    background-color: transparent !important;
+  }
+
+  /* Add subtle overlay for content readability */
+  .bg-theme {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(2px);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+    background-color: var(--accent);
+    color: white;
+  }
+
+  .btn-primary:hover {
+    filter: brightness(1.1);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+    background-color: var(--bg-secondary-100);
+    color: var(--text-primary);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--bg-secondary-50);
+  }
+}
+
+/* Custom utility classes for theme-aware styling */
+.bg-theme {
+  background-color: var(--background);
+}
+
+.text-theme-primary {
+  color: var(--text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.text-theme-accent {
+  color: var(--accent);
+}
+
+.text-theme-gray {
+  color: var(--text-gray);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+.bg-gradient-theme {
+  background: linear-gradient(
+    135deg,
+    var(--bg-gradient-from),
+    var(--bg-gradient-to)
+  );
+}
+
+.shadow-theme {
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
