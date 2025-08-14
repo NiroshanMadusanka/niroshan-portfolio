@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import TiltWrapper from "./TiltWrapper";
+import rentRideImage from "../assets/rent-ride.jpeg";
+import doughGoImage from "../assets/doughgo.jpg";
 
 const Projects = () => {
   const projects = [
@@ -13,7 +15,7 @@ const Projects = () => {
       githubUrl:
         "https://github.com/NiroshanMadusanka/CSC3132_Project_Vehicle_Renting_Website",
       liveUrl: "#",
-      imageUrl: "/src/assets/rent-ride.jpeg",
+      imageUrl: rentRideImage,
     },
     {
       title: "DoughGo (Group Project)",
@@ -28,7 +30,7 @@ const Projects = () => {
       ],
       githubUrl: "https://github.com/kavindacena99/DoughGo",
       liveUrl: "#",
-      imageUrl: "/src/assets/doughgo.jpg",
+      imageUrl: doughGoImage,
     },
   ];
 
