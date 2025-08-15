@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useTheme } from "../contexts/ThemeContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
     { href: "#home", label: "Home" },
@@ -16,27 +18,54 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navLinks.map((link) =>
-        document.querySelector(link.href)
-      );
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const sections = navLinks
+        .map((link) => ({
+          id: link.href.substring(1),
+          element: document.querySelector(link.href),
+        }))
+        .filter((item) => item.element);
 
-      sections.forEach((section, index) => {
-        if (section) {
-          const { offsetTop, offsetHeight } = section;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(navLinks[index].href.substring(1));
-          }
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
+
+      let currentSection = "home"; // Default section
+
+      sections.forEach(({ id, element }) => {
+        const { offsetTop, offsetHeight } = element;
+        const sectionTop = offsetTop - 100; // Offset for navbar height
+        const sectionBottom = offsetTop + offsetHeight - 100;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          currentSection = id;
         }
       });
+
+      // Handle edge case - when at bottom of page
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 100
+      ) {
+        currentSection = "contact";
+      }
+
+      setActiveSection(currentSection);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Throttle scroll events for better performance
+    let ticking = false;
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", throttledHandleScroll);
     handleScroll(); // Initial call
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", throttledHandleScroll);
   }, []);
 
   const handleNavClick = (e, href) => {
@@ -74,6 +103,15 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+
+            {/* Theme Toggle Button */}
+            <button
+              onClick={toggleTheme}
+              className="w-full py-2 px-4 rounded-full text-center text-xs font-medium transition-all duration-300 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-sky-400/30 text-gray-200"
+              aria-label="Toggle dark mode"
+            >
+              {theme === "dark" ? "🌙" : "☀️"}
+            </button>
           </div>
         </div>
       </nav>

@@ -178,7 +178,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding bg-gray-50">
+    <section id="skills" className="section-padding bg-theme">
       <div className="container-custom">
         <ScrollReveal direction="up" duration={0.8}>
           <div className="text-center mb-12">
@@ -201,7 +201,7 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <TiltWrapper
               key={category.title}
-              className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-theme-secondary-50 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
               tiltMaxAngleX={6}
               tiltMaxAngleY={6}
               scale={1.02}

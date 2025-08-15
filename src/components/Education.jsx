@@ -4,7 +4,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <section id="education" className="section-padding bg-white">
+    <section id="education" className="section-padding bg-theme">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-theme-secondary-50 rounded-lg shadow-lg p-8"
           >
             <div className="flex items-center justify-center mb-6">
               <FaGraduationCap className="text-4xl text-primary-600 mr-4" />

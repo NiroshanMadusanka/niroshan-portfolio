@@ -9,10 +9,12 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AnimatedSection from "./components/AnimatedSection";
+import ThemeSelectorPopup from "./components/ThemeSelectorPopup";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-theme">
+      <ThemeSelectorPopup />
       <Navbar />
       <main className="md:ml-40">
         <motion.div

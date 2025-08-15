@@ -2,7 +2,7 @@ import React from "react";
 
 const ScrollAnimationUsageGuide = () => {
   return (
-    <div className="p-8 bg-gray-50 rounded-lg">
+    <div className="p-8 bg-theme rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Scroll Animation Usage Guide</h2>
 
       <div className="space-y-4">
@@ -13,7 +13,7 @@ const ScrollAnimationUsageGuide = () => {
           <p className="text-sm text-gray-600 mb-2">
             Use for individual elements with fade-in animations.
           </p>
-          <pre className="bg-gray-100 p-2 rounded text-xs">
+          <pre className="bg-theme-secondary-100 p-2 rounded text-xs">
             {`<ScrollReveal direction="up" delay={0.2} duration={0.8}>
   <h2>Your Content</h2>
 </ScrollReveal>`}
@@ -27,7 +27,7 @@ const ScrollAnimationUsageGuide = () => {
           <p className="text-sm text-gray-600 mb-2">
             Use for multiple elements with staggered animations.
           </p>
-          <pre className="bg-gray-100 p-2 rounded text-xs">
+          <pre className="bg-theme-secondary-100 p-2 rounded text-xs">
             {`<ScrollRevealGroup direction="up" staggerDelay={0.1}>
   <div>Item 1</div>
   <div>Item 2</div>
