@@ -62,10 +62,10 @@ const Hero = () => {
 
             <div className="text-lg md:text-xl text-theme-secondary space-y-1">
               <p className="font-semibold">
-                Full-Stack Developer | Problem Solver | Tech Enthusiast
+                Full-Stack Developer | Data Scientist | AI/ML Enthusiast
               </p>
               <p className="text-base md:text-lg">
-                Turning ideas into impactful digital solutions
+                Building intelligent solutions through code and data
               </p>
             </div>
           </motion.div>
@@ -89,7 +89,7 @@ const Hero = () => {
               </div>
               <div>
                 <TypingAnimation
-                  text="A Full-Stack Developer passionate about building"
+                  text="A Full-Stack Developer & Data Scientist"
                   speed={50}
                   delay={1500}
                   className="inline"
@@ -97,7 +97,7 @@ const Hero = () => {
               </div>
               <div>
                 <TypingAnimation
-                  text="intuitive web & mobile experiences..."
+                  text="passionate about intelligent solutions..."
                   speed={50}
                   delay={3000}
                   className="inline"
@@ -105,7 +105,7 @@ const Hero = () => {
               </div>
               <div>
                 <TypingAnimation
-                  text="Always learning, always creating."
+                  text="Merging code, data, and mathematics."
                   speed={50}
                   delay={4500}
                   className="inline"

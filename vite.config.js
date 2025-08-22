@@ -4,4 +4,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: process.env.VITE_BASE_PATH || "/niroshan-portfolio",
+  assetsInclude: ["**/*.PNG", "**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif"],
 });

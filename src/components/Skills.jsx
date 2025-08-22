@@ -13,6 +13,8 @@ import {
   FaCode,
   FaShieldAlt,
   FaCalculator,
+  FaChartLine,
+  FaBrain,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -21,6 +23,10 @@ import {
   SiPhp,
   SiMongodb,
   SiMysql,
+  SiPytorch,
+  SiTensorflow,
+  SiPandas,
+  SiNumpy,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -151,6 +157,36 @@ const Skills = () => {
         {
           name: "Figma",
           icon: <FaCode className="text-pink-500" />,
+          level: "Intermediate",
+        },
+      ],
+    },
+    {
+      title: "Data Science & AI/ML",
+      skills: [
+        {
+          name: "Python Data Science",
+          icon: <FaPython className="text-blue-500" />,
+          level: "Intermediate",
+        },
+        {
+          name: "Pandas",
+          icon: <SiPandas className="text-purple-500" />,
+          level: "Intermediate",
+        },
+        {
+          name: "NumPy",
+          icon: <SiNumpy className="text-blue-600" />,
+          level: "Intermediate",
+        },
+        {
+          name: "Scikit-learn",
+          icon: <FaBrain className="text-orange-500" />,
+          level: "Intermediate",
+        },
+        {
+          name: "Data Visualization",
+          icon: <FaChartLine className="text-green-500" />,
           level: "Intermediate",
         },
       ],

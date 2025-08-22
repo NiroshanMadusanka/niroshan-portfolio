@@ -23,8 +23,10 @@ const About = () => {
                   <p className="text-theme-gray">
                     I completed my Bachelor of Science in Applied Mathematics
                     and Computing from the University of Jaffna – Vavuniya
-                    Campus, where I gained solid foundations in computational
-                    mathematics, statistics, and computer security.
+                    Campus, where I gained strong foundations in computational
+                    mathematics, statistical analysis, machine learning, and
+                    computer security - providing the perfect blend for data
+                    science and AI/ML applications.
                   </p>
                 </div>
               </ScrollReveal>
@@ -35,10 +37,11 @@ const About = () => {
                     Skills Summary
                   </h3>
                   <p className="text-theme-gray">
-                    I combine expertise in software development, computational
-                    mathematics, and cybersecurity to design intelligent,
-                    secure, and high-performance solutions for the modern
-                    digital world
+                    I combine expertise in full-stack development, data science,
+                    computational mathematics, and AI/ML to design intelligent,
+                    data-driven solutions. My background in applied mathematics
+                    provides the analytical foundation for building robust
+                    machine learning models and scalable software systems.
                   </p>
                 </div>
               </ScrollReveal>
